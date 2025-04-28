@@ -42,7 +42,7 @@ Key capabilities include:
 
     - Magnetic field strength via hall voltage
 
-Measurement results (*e.g.*, conductivity and electroluminescence vs. magnetic field) are visualized live on the interface.
+Measurement results (*e.g.* conductivity and electroluminescence vs. magnetic field) are visualized live on the interface.
 
 #### Cryostat Integration
 When using a cryostat, it is recommended to use a relay switch box, enabling automated measurement of multiple pixels on the same device, without the need for manual intervention. This is available under the "Cryo Mode" setting. For non-cryogenic measurements, this option can be ignored.
@@ -50,9 +50,7 @@ When using a cryostat, it is recommended to use a relay switch box, enabling aut
 ### Data Analysis and Post-Processing
 A post-processing tool is included to compute the OMFE using the formula:
 
-$\[
-\text{MFE}(\%) = \frac{\text{MFE}(B) - \text{MFE}(B=0)}{\text{MFE}(B=0)} \times 100
-\]$
+$MFE = \frac{MFE(B) - MFE(B=0)}{MFE(B=0)} \times 100$ %
 
 
 Additional analysis features:
@@ -61,7 +59,7 @@ Additional analysis features:
 
 - Data fitting with implemented functions:
 
-    - Lorentzian profiles
+    - Lorentzian functions
 
     - Cole-Cole functions
 
