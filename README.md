@@ -50,9 +50,9 @@ When using a cryostat, it is recommended to use a relay switch box, enabling aut
 ### Data Analysis and Post-Processing
 A post-processing tool is included to compute the OMFE using the formula:
 
-\[
+$\[
 \text{MFE}(\%) = \frac{\text{MFE}(B) - \text{MFE}(B=0)}{\text{MFE}(B=0)} \times 100
-\]
+\]$
 
 
 Additional analysis features:
@@ -90,7 +90,7 @@ As additional columns are saved for the temperature dependent measurements (*Cry
 ### Further Reading
 More detailed experimental and theoretical background is available in the following publications:
 
-- [Morgenstern *et al.*, Analysis of polaron pair lifetime dynamics and secondary processes in exciplex driven TADF OLEDs using organic magnetic field effects](#https://www.nature.com/articles/s41598-024-82060-z)
+- [Morgenstern *et al.*, Analysis of polaron pair lifetime dynamics and secondary processes in exciplex driven TADF OLEDs using organic magnetic field effects](https://www.nature.com/articles/s41598-024-82060-z)
 
 
 ## Installation
