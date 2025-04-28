@@ -13,7 +13,7 @@
 ### Overview
 This repository contains code developed to measure the current and electroluminescence dependence of a light-emitting device under the influence of a magnetic field. The effect under investigation is known as the Organic Magnetic Field Effect (MFE). For more information, refer to:
 
-- [Morgenstern *et al.*, Analysis of polaron pair lifetime dynamics and secondary processes in exciplex driven TADF OLEDs using organic magnetic field effects](#https://www.nature.com/articles/s41598-024-82060-z)
+- [Morgenstern *et al.*, Analysis of polaron pair lifetime dynamics and secondary processes in exciplex driven TADF OLEDs using organic magnetic field effects](https://www.nature.com/articles/s41598-024-82060-z)
 
 - [Ehrenfreund and Vardeny, Effects of Magnetic Field on Conductance and Electroluminescence in Organic Devices](https://onlinelibrary.wiley.com/doi/full/10.1002/ijch.201100120)
 
@@ -50,7 +50,10 @@ When using a cryostat, it is recommended to use a relay switch box, enabling aut
 ### Data Analysis and Post-Processing
 A post-processing tool is included to compute the OMFE using the formula:
 
-$$ MFE (\%) = (MFE(B) - MFE(B=0)) / MFE(B=0)$$ 
+\[
+\text{MFE}(\%) = \frac{\text{MFE}(B) - \text{MFE}(B=0)}{\text{MFE}(B=0)} \times 100
+\]
+
 
 Additional analysis features:
 
