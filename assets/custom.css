@@ -1,0 +1,25 @@
+QPushButton.action {{
+    color: {QTMATERIAL_SECONDARYCOLOR};
+    background-color: {QTMATERIAL_PRIMARYCOLOR};
+  }}
+
+QPushButton.action:pressed {{
+  color: {QTMATERIAL_SECONDARYCOLOR};
+  background-color: {QTMATERIAL_PRIMARYLIGHTCOLOR};
+}}
+
+
+QDateEdit,
+QDateTimeEdit,
+QSpinBox,
+QDoubleSpinBox,
+QTreeView,
+QListView,
+QLineEdit,
+QComboBox {{
+  color: {QTMATERIAL_PRIMARYCOLOR};
+}}
+
+QComboBox[frame='false'] {{
+  color: {QTMATERIAL_PRIMARYCOLOR};
+}}

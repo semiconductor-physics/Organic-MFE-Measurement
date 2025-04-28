@@ -1,0 +1,50 @@
+#
+# rename this template file to process_config.yaml
+#
+processing_mode: cryo                                             # Processing mode [cryo, standard]
+ramp:
+  oled:                                                            
+    filter:
+      N: 5                                                        # Order
+      btype: lowpass                                              # Filtertype [lowpass, highpass]
+      Wn: [20]                                                    # Cutoff frequency [Hz]
+  photo:
+    filter:
+      N: 5                                                        # Order
+      btype: lowpass                                              # Filtertype [lowpass, highpass]
+      Wn: [20]                                                    # Cutoff frequency [Hz]
+  fitting:
+    effects_to_fit:                                               # List of effects to fit [omc, mel, mageff]
+      - omc
+      - mel
+      - mageff
+    omc:
+      models:                                                     # List of models to fit for omc
+        - []                                                      # List of cole models
+        -                                                         # List of lorentizan models
+          - double_non_lorentzian
+          - double_lorentzian
+          - lorentzian_non_lorentzian  
+          - lorentzian
+          - non_lorentzian
+      fit_score: bic                                              # Fit evaluation score [aic, bic, cp, r2, rmse, mae]
+    mel:                                                          
+      models:                                                     # List of models to fit for mel
+        -                                                         # List of cole models
+          - cole
+          - double_cole
+        -                                                         # List of lorentizan models
+          - double_non_lorentzian
+          - double_lorentzian
+          - lorentzian_non_lorentzian  
+      fit_score: bic	                                            # Fit evaluation score [aic, bic, cp, r2, rmse, mae]  
+    mageff:                                                    
+      models:                                                     # List of models to fit for mageff
+        -                                                         # List of cole models
+          - cole
+          - double_cole
+        -                                                         # List of lorentizan models
+          - double_non_lorentzian
+          - double_lorentzian
+          - lorentzian_non_lorentzian  
+      fit_score: bic                                              # Fit evaluation score [aic, bic, cp, r2, rmse, mae]

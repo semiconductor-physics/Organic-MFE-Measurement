@@ -1,0 +1,17 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# config files
+*config.yaml
+
+# measurements
+*.csv
+saves/
+
+# vscode
+.vscode/
+
+# run scripts
+*.bat
