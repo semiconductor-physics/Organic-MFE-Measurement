@@ -401,7 +401,7 @@ def process_measurement_cryo(path: str, config: dict):
             ramp_g_data = {"tau": tau_range}
             ramp = preprocess_ramp(ramp, config)
             fitting_config = config["ramp"]["fitting"]
-            for effect_name in effects_to_fit:
+            for effect_name in fitting_config["effects_to_fit"]:
                 fit_info, g_value = analyze_effect(
                     ramp,
                     effect_name=effect_name,
