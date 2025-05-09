@@ -37,7 +37,7 @@ ramp:
           - double_non_lorentzian
           - double_lorentzian
           - lorentzian_non_lorentzian  
-      fit_score: bic	                                            # Fit evaluation score [aic, bic, cp, r2, rmse, mae]  
+      fit_score: bic                                              # Fit evaluation score [aic, bic, cp, r2, rmse, mae] 
     mageff:                                                    
       models:                                                     # List of models to fit for mageff
         -                                                         # List of cole models
